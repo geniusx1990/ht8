@@ -42,10 +42,11 @@ manager.scheduleImmediate();
 5. The immediate task is scheduled and registered a callback function.
 
 The event loop begins:
-6. The immediate task is executed.
-7. The first simulateAsyncOperation completed after 200 ms and the callback is executed.
-8. The microtask process.nextTick is executed immediately.
-9. The second simulateAsyncOperation completed after 1000 ms and the callback is executed.
-10. The microtask process.nextTick is executed immediately.
+6. The promise microtask is executeed.
+7. The immediate task is executed.
+8. The first simulateAsyncOperation completed after 200 ms and the callback is executed.
+9. The microtask process.nextTick is executed immediately.
+10. The second simulateAsyncOperation completed after 1000 ms and the callback is executed.
+11. The microtask process.nextTick is executed immediately.
 12. The program ends.
  */
