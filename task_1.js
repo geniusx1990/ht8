@@ -37,7 +37,7 @@ manager.scheduleImmediate();
 /*  Expected Execution Flow:
 1. Instance of the "AsyncOperationManager" class is created.
 2. First simulateAsyncOperation with a 200 ms delay is scheduled and registered a callback function. 
-3. The microtask using Promise is scheduled and executed.
+3. The microtask using Promise is scheduled.
 4. Second simulateAsyncOperation with a 1000 ms delay is scheduled and registered a callback function
 5. The immediate task is scheduled and registered a callback function.
 
